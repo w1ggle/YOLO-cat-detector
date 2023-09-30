@@ -1,5 +1,11 @@
 from ultralytics import YOLO
+from heic2png import HEIC2PNG
 
 model = YOLO("best.pt")
 
-results = model(source = "file1.png", show = True, save = True )
+#png = HEIC2PNG("IMG_2160.HEIC")
+#png.save()
+
+#print(png)
+
+results = model(source = "IMG_2160.png", show = True, save = True )
