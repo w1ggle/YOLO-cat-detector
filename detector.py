@@ -8,4 +8,4 @@ model = YOLO("best.pt")
 
 #print(png)
 
-results = model(source = "IMG_2160.png", show = True, save = True )
+results = model(source = 0, show = True) #source = 0 means webcam
